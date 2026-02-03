@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brainrot Clicker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loading">
+  <h1>🧠 Loading Brainrot…</h1>
+</div>
+
+<!-- GAME -->
+<div class="container hidden" id="game">
+  <h1>🧠💀 Brainrot Clicker</h1>
+
+  <div class="stats">
+    <p>🪙 Coins: <span id="coins">0</span></p>
+    <p>👆 CPC: <span id="cpc">1</span></p>
+    <p>⚡ CPS: <span id="cps">0</span></p>
+  </div>
+
+  <button id="clickBtn" class="big">SMASH 💥</button>
+
+  <h2>🛒 Upgrades</h2>
+  <div id="upgradesList"></div>
+
+  <h2>🏆 Achievements</h2>
+  <ul id="achievements"></ul>
+
+  <div class="controls">
+    <button id="musicBtn">🔊 Music</button>
+    <button id="saveBtn">💾 Save</button>
+    <button id="resetBtn">🗑 Reset</button>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/10/16/audio_0c63d2fa18.mp3">
+  </audio>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

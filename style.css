@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", Arial;
+  background: linear-gradient(135deg, #ff00ff, #00ffff);
+  text-align: center;
+}
+
+.hidden { display: none; }
+
+#loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 30px black;
+}
+
+.big {
+  font-size: 26px;
+  padding: 18px 40px;
+  background: hotpink;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.big:hover { transform: scale(1.1); }
+
+.upgrade {
+  display: flex;
+  justify-content: space-between;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.controls button {
+  margin: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
